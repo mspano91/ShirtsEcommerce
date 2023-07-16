@@ -5,7 +5,8 @@
         "detalle":"Home Kit",
         "precio":90,
         "imagen":"../img/united1.png",
-        "categoria":"Premier-legue"
+        "categoria":"Premier-legue",
+        "clave":"premier manchester united inglaterra england"
         },
     {
         "id":"Camiseta-premier02",
@@ -13,7 +14,8 @@
         "detalle":"Home Kit",
         "precio":90,
         "imagen":"../img/city1.png",
-        "categoria":"Premier-legue"
+        "categoria":"Premier-legue",
+        "clave":"premier manchester city inglaterra england"
     },
     {
         "id":"Camiseta-premier03",
@@ -21,7 +23,8 @@
         "detalle":"Home Kit",
         "precio":90,
         "imagen":"../img/pool.jpg",
-        "categoria":"Premier-legue"
+        "categoria":"Premier-legue",
+        "clave":"premier liverpool inglaterra england"
     },
     {
         "id":"Camiseta-premier04",
@@ -29,7 +32,8 @@
         "detalle":"Home Kit",
         "precio":90,
         "imagen":"../img/tot.jpg",
-        "categoria":"Premier-legue"
+        "categoria":"Premier-legue",
+        "clave":"premier totenham spurs inglaterra england"
         },
     {
         "id":"Camiseta-premier05",
@@ -37,7 +41,8 @@
         "detalle":"Home Kit",
         "precio":90,
         "imagen":"../img/brigthon.png",
-        "categoria":"Premier-legue"
+        "categoria":"Premier-legue",
+        "clave":"premier Brigthon gaviotas inglaterra england"
         },
     {
         "id":"Camiseta-premier06",
@@ -45,7 +50,8 @@
         "detalle":"Home Kit",
         "precio":90,
         "imagen":"../img/chelsea.png",
-        "categoria":"Premier-legue"
+        "categoria":"Premier-legue",
+        "clave":"premier Chelsea blues inglaterra england"
         },
     {
         "id":"Camiseta-premier07",
@@ -53,7 +59,8 @@
         "detalle":"Home Kit",
         "precio":90,
         "imagen":"../img/arsenal1.png",
-        "categoria":"Premier-legue"
+        "categoria":"Premier-legue",
+        "clave":"premier Arsenal gunners inglaterra england"
         },
     {
         "id":"Camiseta-premier08",
@@ -61,7 +68,8 @@
         "detalle":"Home Kit",
         "precio":90,
         "imagen":"../img/newcastel.png",
-        "categoria":"Premier-legue"
+        "categoria":"Premier-legue",
+        "clave":"premier New Castle urracas inglaterra england"
         },
     {
             "id":"Camiseta-premier09",
@@ -69,7 +77,8 @@
             "detalle":"Away Kit",
             "precio":90,
             "imagen":"../img/fulham.png",
-            "categoria":"Premier-legue"
+            "categoria":"Premier-legue",
+            "clave":"premier Fulham inglaterra england"
             },
         {
             "id":"Camiseta-premier10",
@@ -77,7 +86,8 @@
             "detalle":"Away Kit",
             "precio":90,
             "imagen":"../img/arsenal.png",
-            "categoria":"Premier-legue"
+            "categoria":"Premier-legue",
+            "clave":"premier Arsenal gunners inglaterra england"
             },
     {
         "id":"Camiseta-SerieA01",
@@ -85,7 +95,8 @@
         "detalle":"Home Kit",
         "precio":90,
         "imagen":"../img/JUVE HOME.png",
-        "categoria":"SerieA"
+        "categoria":"SerieA",
+        "clave":"Juventus vechia_signora zebra italia italy SerieA"
         },
     {
         "id":"Camiseta-SerieA02",
@@ -93,15 +104,17 @@
         "detalle":"Home Kit",
         "precio":90,
         "imagen":"../img/inter home.png",
-        "categoria":"SerieA"
+        "categoria":"SerieA",
+        "clave":"Inter azurro italia italy SerieA"
         },
     {
         "id":"CamisetaSerieA03",
-        "titulo":"AS ROMA",
+        "nombre":"AS ROMA",
         "detalle":"Home Kit",
         "precio":90,
         "imagen":"../img/roma.png",
-        "categoria":"SerieA"
+        "categoria":"SerieA",
+        "clave":"roma loba italia italy SerieA"
         },
     {
         "id":"CamisetaSerieA04",
@@ -109,7 +122,8 @@
         "detalle":"Home Kit",
         "precio":90,
         "imagen":"../img/SAUOLO.PNG",
-        "categoria":"SerieA"
+        "categoria":"SerieA",
+        "clave":"Sasuolo italia italy SerieA"
         },
     {
         "id":"CamisetaSerieA05",
@@ -117,7 +131,8 @@
         "detalle":"Home Kit",
         "precio":90,
         "imagen":"../img/NAPOLI.PNG",
-        "categoria":"SerieA"
+        "categoria":"SerieA",
+        "clave":"Napoli italia italy SerieA"
         },
     {
         "id":"CamisetaSerieA06",
@@ -125,7 +140,8 @@
         "detalle":"Home Kit",
         "precio":90,
         "imagen":"../img/MILAN.PNG",
-        "categoria":"SerieA"
+        "categoria":"SerieA",
+        "clave":"Milan italia italy SerieA"
         },
     {
         "id":"Camiseta-SerieA07",
@@ -133,7 +149,8 @@
         "detalle":"Home Kit",
         "precio":90,
         "imagen":"../img/FIORE.PNG",
-        "categoria":"SerieA"
+        "categoria":"SerieA",
+        "clave":"Fiorentina viola florencia italia italy SerieA"
         },
     {
         "id":"Camiseta-SerieA08",
@@ -141,7 +158,8 @@
         "detalle":"Home Kit",
         "precio":90,
         "imagen":"../img/VENEZIA.PNG",
-        "categoria":"SerieA"
+        "categoria":"SerieA",
+        "clave":"Venezia venecia italia italy SerieA"
         },
     {
         "id":"Camiseta-SerieA09",
@@ -149,7 +167,8 @@
         "detalle":"AwaY Kit",
         "precio":90,
         "imagen":"../img/lazio1.PNG",
-        "categoria":"SerieA"
+        "categoria":"SerieA",
+        "clave":"Lazio italia italy SerieA"
         },
     {
         "id":"Camiseta-SerieA10",
@@ -157,15 +176,18 @@
         "detalle":"Away Kit",
         "precio":90,
         "imagen":"../img/juve1.PNG",
-        "categoria":"SerieA"
+        "categoria":"SerieA",
+        "clave":"Juventus vechia_signora zebra italia italy SerieA"
         },
+
         {
             "id":"Camiseta-liga01",
             "nombre": "Manchester Untd",
             "detalle":"Home Kit",
             "precio":90,
             "imagen":"../img/united1.png",
-            "categoria":"Laliga"
+            "categoria":"Laliga",
+            "clave":"la_liga españa spain BBVA"
             },
         {
             "id":"Camiseta-liga02",
@@ -173,7 +195,8 @@
             "detalle":"Home Kit",
             "precio":90,
             "imagen":"../img/city1.png",
-            "categoria":"Laliga"
+            "categoria":"Laliga",
+            "clave":"la_liga españa spain BBVA"
         },
         {
             "id":"Camiseta-liga03",
@@ -181,7 +204,8 @@
             "detalle":"Home Kit",
             "precio":90,
             "imagen":"../img/pool.jpg",
-            "categoria":"Laliga"
+            "categoria":"Laliga",
+            "clave":"la_liga españa spain BBVA"
         },
         {
             "id":"Camiseta-liga04",
@@ -189,7 +213,8 @@
             "detalle":"Home Kit",
             "precio":90,
             "imagen":"../img/tot.jpg",
-            "categoria":"Laliga"
+            "categoria":"Laliga",
+            "clave":"la_liga españa spain BBVA"
             },
         {
             "id":"Camiseta-liga05",
@@ -197,7 +222,8 @@
             "detalle":"Home Kit",
             "precio":90,
             "imagen":"../img/brigthon.png",
-            "categoria":"Laliga"
+            "categoria":"Laliga",
+            "clave":"la_liga españa spain BBVA"
             },
         {
             "id":"Camiseta-liga06",
@@ -205,7 +231,8 @@
             "detalle":"Home Kit",
             "precio":90,
             "imagen":"../img/chelsea.png",
-            "categoria":"Laliga"
+            "categoria":"Laliga",
+            "clave":"la_liga españa spain BBVA"
             },
         {
             "id":"Camiseta-liga07",
@@ -213,7 +240,8 @@
             "detalle":"Home Kit",
             "precio":90,
             "imagen":"../img/arsenal1.png",
-            "categoria":"Laliga"
+            "categoria":"Laliga",
+            "clave":"la_liga españa spain BBVA"
             },
         {
             "id":"Camiseta-liga08",
@@ -221,7 +249,8 @@
             "detalle":"Home Kit",
             "precio":90,
             "imagen":"../img/newcastel.png",
-            "categoria":"Laliga"
+            "categoria":"Laliga",
+            "clave":"la_liga españa spain BBVA"
             },
         {
                 "id":"Camiseta-liga09",
@@ -229,7 +258,8 @@
                 "detalle":"Away Kit",
                 "precio":90,
                 "imagen":"../img/fulham.png",
-                "categoria":"Laliga"
+                "categoria":"Laliga",
+            "clave":"la_liga españa spain BBVA"
                 },
             {
                 "id":"Camiseta-liga10",
@@ -237,7 +267,8 @@
                 "detalle":"Away Kit",
                 "precio":90,
                 "imagen":"../img/arsenal.png",
-                "categoria":"Laliga"
+                "categoria":"Laliga",
+            "clave":"la_liga españa spain BBVA"
                 }
     ]
     

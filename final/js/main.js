@@ -18,13 +18,15 @@ class BaseDeDatos{
         return this.productos.find((producto) => producto.id === id);
       }
 
-      registrosPorNombre(palabra) {
-        return this.productos.filter((producto) => producto.nombre.toLowerCase().includes(palabra));
+      registrosPorNombre(clave) {
+        return this.productos.filter((producto) => producto.clave.toLowerCase().includes(clave));
       }
 
       registrosPorCategoria(categoria) {
         return this.productos.filter((producto) => producto.categoria === categoria);
       }
+
+
 }
 
 const bd = new BaseDeDatos();
