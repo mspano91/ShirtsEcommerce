@@ -1,0 +1,244 @@
+[
+     {
+        "id":"Camiseta-premier01",
+        "nombre": "Manchester Untd",
+        "detalle":"Home Kit",
+        "precio":90,
+        "imagen":"../img/united1.png",
+        "categoria":"Premier-legue"
+        },
+    {
+        "id":"Camiseta-premier02",
+        "nombre":"Manchester city",
+        "detalle":"Home Kit",
+        "precio":90,
+        "imagen":"../img/city1.png",
+        "categoria":"Premier-legue"
+    },
+    {
+        "id":"Camiseta-premier03",
+        "nombre":"Liverpool Fc",
+        "detalle":"Home Kit",
+        "precio":90,
+        "imagen":"../img/pool.jpg",
+        "categoria":"Premier-legue"
+    },
+    {
+        "id":"Camiseta-premier04",
+        "nombre":"Totenham spurs",
+        "detalle":"Home Kit",
+        "precio":90,
+        "imagen":"../img/tot.jpg",
+        "categoria":"Premier-legue"
+        },
+    {
+        "id":"Camiseta-premier05",
+        "nombre":"Brigthon Fc",
+        "detalle":"Home Kit",
+        "precio":90,
+        "imagen":"../img/brigthon.png",
+        "categoria":"Premier-legue"
+        },
+    {
+        "id":"Camiseta-premier06",
+        "nombre":"Chelsea Fc",
+        "detalle":"Home Kit",
+        "precio":90,
+        "imagen":"../img/chelsea.png",
+        "categoria":"Premier-legue"
+        },
+    {
+        "id":"Camiseta-premier07",
+        "nombre":"Arsenal Fc",
+        "detalle":"Home Kit",
+        "precio":90,
+        "imagen":"../img/arsenal1.png",
+        "categoria":"Premier-legue"
+        },
+    {
+        "id":"Camiseta-premier08",
+        "nombre":"New Castle U.Fc",
+        "detalle":"Home Kit",
+        "precio":90,
+        "imagen":"../img/newcastel.png",
+        "categoria":"Premier-legue"
+        },
+    {
+            "id":"Camiseta-premier09",
+            "nombre":"Fulham fc",
+            "detalle":"Away Kit",
+            "precio":90,
+            "imagen":"../img/fulham.png",
+            "categoria":"Premier-legue"
+            },
+        {
+            "id":"Camiseta-premier10",
+            "nombre":"Arsenal Fc",
+            "detalle":"Away Kit",
+            "precio":90,
+            "imagen":"../img/arsenal.png",
+            "categoria":"Premier-legue"
+            },
+    {
+        "id":"Camiseta-SerieA01",
+        "nombre":"Juventus",
+        "detalle":"Home Kit",
+        "precio":90,
+        "imagen":"../img/JUVE HOME.png",
+        "categoria":"SerieA"
+        },
+    {
+        "id":"Camiseta-SerieA02",
+        "nombre":"Inter FC",
+        "detalle":"Home Kit",
+        "precio":90,
+        "imagen":"../img/inter home.png",
+        "categoria":"SerieA"
+        },
+    {
+        "id":"CamisetaSerieA03",
+        "titulo":"AS ROMA",
+        "detalle":"Home Kit",
+        "precio":90,
+        "imagen":"../img/roma.png",
+        "categoria":"SerieA"
+        },
+    {
+        "id":"CamisetaSerieA04",
+        "nombre":"US Sasuolo",
+        "detalle":"Home Kit",
+        "precio":90,
+        "imagen":"../img/SAUOLO.PNG",
+        "categoria":"SerieA"
+        },
+    {
+        "id":"CamisetaSerieA05",
+        "nombre":"Napoli Ss",
+        "detalle":"Home Kit",
+        "precio":90,
+        "imagen":"../img/NAPOLI.PNG",
+        "categoria":"SerieA"
+        },
+    {
+        "id":"CamisetaSerieA06",
+        "nombre":"AS Milan",
+        "detalle":"Home Kit",
+        "precio":90,
+        "imagen":"../img/MILAN.PNG",
+        "categoria":"SerieA"
+        },
+    {
+        "id":"Camiseta-SerieA07",
+        "nombre":"AC Fiorentina",
+        "detalle":"Home Kit",
+        "precio":90,
+        "imagen":"../img/FIORE.PNG",
+        "categoria":"SerieA"
+        },
+    {
+        "id":"Camiseta-SerieA08",
+        "nombre":"Venezia FC",
+        "detalle":"Home Kit",
+        "precio":90,
+        "imagen":"../img/VENEZIA.PNG",
+        "categoria":"SerieA"
+        },
+    {
+        "id":"Camiseta-SerieA09",
+        "nombre":"S.S Lazio",
+        "detalle":"AwaY Kit",
+        "precio":90,
+        "imagen":"../img/lazio1.PNG",
+        "categoria":"SerieA"
+        },
+    {
+        "id":"Camiseta-SerieA10",
+        "nombre":"Juventus",
+        "detalle":"Away Kit",
+        "precio":90,
+        "imagen":"../img/juve1.PNG",
+        "categoria":"SerieA"
+        },
+        {
+            "id":"Camiseta-liga01",
+            "nombre": "Manchester Untd",
+            "detalle":"Home Kit",
+            "precio":90,
+            "imagen":"../img/united1.png",
+            "categoria":"Laliga"
+            },
+        {
+            "id":"Camiseta-liga02",
+            "nombre":"Manchester city",
+            "detalle":"Home Kit",
+            "precio":90,
+            "imagen":"../img/city1.png",
+            "categoria":"Laliga"
+        },
+        {
+            "id":"Camiseta-liga03",
+            "nombre":"Liverpool Fc",
+            "detalle":"Home Kit",
+            "precio":90,
+            "imagen":"../img/pool.jpg",
+            "categoria":"Laliga"
+        },
+        {
+            "id":"Camiseta-liga04",
+            "nombre":"Totenham spurs",
+            "detalle":"Home Kit",
+            "precio":90,
+            "imagen":"../img/tot.jpg",
+            "categoria":"Laliga"
+            },
+        {
+            "id":"Camiseta-liga05",
+            "nombre":"Brigthon Fc",
+            "detalle":"Home Kit",
+            "precio":90,
+            "imagen":"../img/brigthon.png",
+            "categoria":"Laliga"
+            },
+        {
+            "id":"Camiseta-liga06",
+            "nombre":"Chelsea Fc",
+            "detalle":"Home Kit",
+            "precio":90,
+            "imagen":"../img/chelsea.png",
+            "categoria":"Laliga"
+            },
+        {
+            "id":"Camiseta-liga07",
+            "nombre":"Arsenal Fc",
+            "detalle":"Home Kit",
+            "precio":90,
+            "imagen":"../img/arsenal1.png",
+            "categoria":"Laliga"
+            },
+        {
+            "id":"Camiseta-liga08",
+            "nombre":"New Castle U.Fc",
+            "detalle":"Home Kit",
+            "precio":90,
+            "imagen":"../img/newcastel.png",
+            "categoria":"Laliga"
+            },
+        {
+                "id":"Camiseta-liga09",
+                "nombre":"Fulham fc",
+                "detalle":"Away Kit",
+                "precio":90,
+                "imagen":"../img/fulham.png",
+                "categoria":"Laliga"
+                },
+            {
+                "id":"Camiseta-liga10",
+                "nombre":"Arsenal Fc",
+                "detalle":"Away Kit",
+                "precio":90,
+                "imagen":"../img/arsenal.png",
+                "categoria":"Laliga"
+                }
+    ]
+    
+    

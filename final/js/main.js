@@ -1,312 +1,289 @@
-// productos AARAY DE OBJETOS
-
-const productos= [
-
-{
-    id:"Camiseta-premier01",
-    titulo: "Manchester Untd",
-    detalle:"Home Kit",
-    precio:90,
-    imagen:"../img/manchester.jpg",
-    categoria:{
-        nombre:"premier legue",
-        id:"Premier-legue",
-    },
-},
-
-{
-    id:"Camiseta-premier02",
-    titulo:"Manchester city",
-    detalle:"Home Kit",
-    precio:90,
-    imagen:"../img/Mancity.jpg",
-    categoria:{
-        nombre:"premier legue",
-        id:"Premier-legue",
-    },
-
-},
 
 
-{
-    id:"Camiseta-premier03",
-    titulo:"Liverpool Fc",
-    detalle:"Home Kit",
-    precio:90,
-    imagen:"../img/pool.jpg",
-    categoria:{
-        nombre:"premier legue",
-        id:"Premier-legue",
-    },
-},
+class BaseDeDatos{
+  constructor(){
+    this.productos = [];
 
+  }
 
-{
-    id:"Camiseta-premier04",
-    titulo:"Totenham spurs",
-    detalle:"Home Kit",
-    precio:90,
-    imagen:"../img/tot.jpg",
-    categoria:{
-        nombre:"premier legue",
-        id:"Premier-legue",
-    },
-},
+  //traemos los objetos del archivo Json
+  async traerRegistros(){
+      const response = await fetch("../json/productos.json");
+      this.productos = await response.json();
+      return this.productos;
 
+      }
 
-{
-    id:"Camiseta-premier05",
-    titulo:"Brigthon Fc",
-    detalle:"Home Kit",
-    precio:90,
-    imagen:"../img/brigthon.png",
-    categoria:{
-        nombre:"premier legue",
-        id:"Premier-legue",
-    },
-},
+      registroPorId(id) {
+        return this.productos.find((producto) => producto.id === id);
+      }
 
+      registrosPorNombre(palabra) {
+        return this.productos.filter((producto) => producto.nombre.toLowerCase().includes(palabra));
+      }
 
-{
-    id:"Camiseta-premier06",
-    titulo:"Chelsea Fc",
-    detalle:"Home Kit",
-    precio:90,
-    imagen:"../img/chelsea.png",
-    categoria:{
-        nombre:"premier legue",
-        id:"Premier-legue",
-    },
-},
-
-
-{
-    id:"Camiseta-premier07",
-    titulo:"Arsenal Fc",
-    detalle:"Home Kit",
-    precio:90,
-    imagen:"../img/arsenal.png",
-    categoria:{
-        nombre:"premier legue",
-        id:"Premier-legue",
-    },
-},
-
-
-{
-    id:"Camiseta-premier08",
-    titulo:"New Castle U.Fc",
-    detalle:"Home Kit",
-    precio:90,
-    imagen:"../img/newcastel.png",
-    categoria:{
-        nombre:"premier legue",
-        id:"Premier-legue",
-    },
-},
-
-
-
-
-// SERIE A OBJETOS
-
-{
-    id:"Camiseta-SerieA01",
-    titulo:"Juventus",
-    detalle:"Home Kit",
-    precio:90,
-    imagen:"../img/JUVE HOME.png",
-    categoria:{
-        nombre:"SerieA",
-        id:"SerieA",
-    },
-},
-
-{
-    id:"Camiseta-SerieA02",
-    titulo:"Inter FC",
-    detalle:"Home Kit",
-    precio:90,
-    imagen:"../img/inter home.png",
-    categoria:{
-        nombre:"SerieA",
-        id:"SerieA",
-    },
-},
-
-
-{
-    id:"CamisetaSerieA03",
-    titulo:"AS ROMA",
-    detalle:"Home Kit",
-    precio:90,
-    imagen:"../img/roma home.png",
-    categoria:{
-        nombre:"SerieA",
-        id:"SerieA",
-    },
-
-},
-
-
-{
-    id:"CamisetaSerieA04",
-    titulo:"US Sasuolo",
-    detalle:"Home Kit",
-    precio:90,
-    imagen:"../img/SAUOLO.PNG",
-    categoria:{
-        nombre:"SerieA",
-        id:"SerieA",
-    },
-},
-
-{
-    id:"CamisetaSerieA05",
-    titulo:"Napoli Ss",
-    detalle:"Home Kit",
-    precio:90,
-    imagen:"../img/NAPOLI.PNG",
-    categoria:{
-        nombre:"SerieA",
-        id:"SerieA",
-    },
-},
-
-{
-    id:"CamisetaSerieA06",
-    titulo:"AS Milan",
-    detalle:"Home Kit",
-    precio:90,
-    imagen:"../img/MILAN.PNG",
-    categoria:{
-        nombre:"SerieA",
-        id:"SerieA",
-    },
-},
-
-{
-    id:"Camiseta-SerieA07",
-    titulo:"AC Fiorentina",
-    detalle:"Home Kit",
-    precio:90,
-    imagen:"../img/FIORE.PNG",
-    categoria:{
-        nombre:"SerieA",
-        id:"SerieA",
-    },
-},
-
-{
-    id:"Camiseta-SerieA08",
-    titulo:"Venezia FC",
-    detalle:"Home Kit",
-    precio:90,
-    imagen:"../img/VENEZIA.PNG",
-    categoria:{
-        nombre:"SerieA",
-        id:"SerieA",
-    },
-},
-];
-
-
-// CONECTAMOS con el DOM
-const contenedorProductos = document.querySelector("#contenedor-productos"); 
-const botonesCategorias = document.querySelectorAll(".botones-categoria");
-let botonesAgregar = document.querySelectorAll(".producto-agregar"); 
-const numerito = document.querySelector("#numerito")
-
-
-//creamos los productos
-function cargarProductos(productosElegidos){
-
-    contenedorProductos.innerHTML = "";
-
-    productosElegidos.forEach(producto => {
-
-        const div = document.createElement("div");
-        div.classList.add("producto");
-        div.innerHTML = `
-        <img class="imagen-prod" src="${producto.imagen}" alt=${producto.titulo}>
-        <div class="producto-detalles">
-        <h3 class="producto-titulo">${producto.titulo}  ${producto.detalle}</h3>
-        <p class="producto-precio">$${producto.precio}</p>
-        <button class="producto-agregar" id="${producto.id}" >agregar</button>
-        </div>
-        `;
-
-        contenedorProductos.append(div);
-    })
-
-actualizarBotonesAgregar();
-
+      registrosPorCategoria(categoria) {
+        return this.productos.filter((producto) => producto.categoria === categoria);
+      }
 }
 
-cargarProductos(productos);
+const bd = new BaseDeDatos();
+
+     class Carrito{
+        constructor(){
+             const carritoStorage = JSON.parse(localStorage.getItem("carrito"));
+
+             this.carrito = carritoStorage || [];
+             this.total = 0
+             this.totalProductos = 0;
+
+            this.listar();
+         }
+
+        estaEnCarrito({ id }) {
+            return this.carrito.find((producto) => producto.id === id);
+          }
+
+        agregar(producto) {
+            const productoEnCarrito = this.estaEnCarrito(producto);
+            if(producto){
+              btnVacio.innerHTML="Tu carrito";
+              seComp.classList.remove("ocultar");
+            }
+
+            if (productoEnCarrito){ 
+              productoEnCarrito.cantidad++;
+            } else {
+                this.carrito.push({ ...producto, cantidad: 1 });
+                
+            }
+
+         localStorage.setItem("carrito", JSON.stringify(this.carrito));
+
+         this.listar();
+          console.log(this.carrito)
+}
 
 
-// filtramos los botones de las categorias///////////////////
+        quitar(id) {
+              const indice = this.carrito.findIndex((producto) => producto.id === id); 
+              console.log(indice)
+              if (this.carrito[indice].cantidad > 1) {
+                  this.carrito[indice].cantidad--;
+
+              } else {
+                this.carrito.splice(indice, 1);
+              }
+
+              localStorage.setItem("carrito", JSON.stringify(this.carrito));
+
+              this.listar();
+
+     
 
 
+// alerta de eliminando producto
+Toastify({
+  text: "Product deleted!",
+  duration: 3000,
+  gravity: 'bottom',
+  position: 'right',
+  style: {background:"rgb(167, 127, 35)"}
+}).showToast();
+
+  
+
+   }
+
+
+
+        listar() {
+          
+              this.total = 0;
+              this.totalProductos = 0;
+              divCarrito.innerHTML = "";
+            for (const producto of this.carrito) {
+              divCarrito.innerHTML += `
+              <div class="productoCarrito">
+
+              <div class="pictureCart">
+              <img class="carrito-producto-imagen" src="${producto.imagen}">
+              </div>
+
+              <div class="detallesCart">
+              <h2>${producto.nombre}</h2>
+              <p>$${producto.precio}</p>
+              <p>Cantidad: ${producto.cantidad}</p>
+              <a href="#" data-id="${producto.id}" class="btnQuitar">Quitar del carrito</a>
+              </div>
+              
+          </div>
+        `;
+
+              this.total += producto.precio * producto.cantidad;
+              this.totalProductos += producto.cantidad;
+            }
+
+            //botones quitar producto en carrito
+            const botonesQuitar = document.querySelectorAll(".btnQuitar");
+            for (const boton of botonesQuitar) {
+                boton.onclick = (event) => {
+                event.preventDefault()
+                this.quitar(boton.dataset.id);
+              };
+            }
+
+            spanCantidadProductos.innerText = this.totalProductos;
+            spanTotalCarrito.innerText = this.total;
+
+          }
+
+          vaciar(){
+            this.carrito = [];
+            localStorage.removeItem("carrito");
+            this.listar();
+          }
+  }
+
+
+// Clase "molde" para crear los productos
+class Producto {
+    constructor(id,nombre,detalle,precio,imagen,categoria) {
+      this.id = id;
+      this.nombre = nombre;
+      this.detalle=detalle;
+      this.precio = precio;
+      this.imagen = imagen;
+      this.categoria = categoria;
+    }
+  }
+
+
+  // conectamos el dom para renderizar los productos y el carrito
+  const divProductos = document.querySelector("#contenedor-productos");
+  const divCarrito = document.querySelector(".carrito-producto");
+
+  //conexion con los valores del carrito
+  const spanCantidadProductos = document.querySelector("#cantidadProductos");
+  const numerito = document.querySelector("#numerito")
+  const spanTotalCarrito = document.querySelector("#totalCarrito");
+  const btnVacio = document.querySelector(".carrito-vacio")
+  const seComp = document.querySelector("#carrito-acciones")
+  const BotonCart = document.querySelector(".appear")
+
+  const divCarro = document.querySelector(".contenedor-carrito")
+
+  //modo oscuro
+  const modOscuro = document.querySelector("#oscuro")
+
+
+
+
+//renderizamos los productos de la base de datos
+  function cargarProductos(productos) {
+
+    divProductos.innerHTML = "";
+    
+    for (const producto of productos) {
+      divProductos.innerHTML += `
+          <div class="producto">
+          <img class="imagen-prod" src="${producto.imagen}">
+          <div class="producto-detalles">
+          <h3 class="producto-titulo">${producto.nombre}  ${producto.detalle}</h3>
+          <p class="producto-precio">$${producto.precio}</p>
+          <button class="producto-agregar" data-id="${producto.id}">agregar</button>
+          </div>
+          </div>
+          `;
+    }
+
+    //boton agregar de cada producto
+    const botonesAgregar = document.querySelectorAll(".producto-agregar");
+
+    for (const boton of botonesAgregar) {
+      boton.addEventListener("click", (event) => {
+        event.preventDefault();
+        const id = (boton.dataset.id);
+        const producto = bd.registroPorId(id);
+        carrito.agregar(producto);
+
+        //alerta de agregado al carrito
+        Toastify({
+          text: "Has been added!",
+          duration: 3000,
+          gravity: 'bottom',
+          position: 'right',
+          style: {background:"#037bf2"}
+      }).showToast();
+
+      }
+      );
+    }
+  }
+
+
+
+// Llamamos a la función para cargar los productos
+  bd.traerRegistros().then((productos) => cargarProductos(productos));
+
+
+//seleccionar categorias
+const botonesCategorias = document.querySelectorAll(".botones-categoria");
+  
 botonesCategorias.forEach(boton => {
-    boton.addEventListener("click", (e)=>{
-        const productosBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
-        cargarProductos(productosBoton);
-    })
+  boton.addEventListener("click", (event)=>{
+      event.preventDefault();
+      const id = boton.id;
+      const producto = bd.registrosPorCategoria(id);
+
+ 
+    //aca filtramos las categorias por id
+      if(id!="todos"){
+        cargarProductos(producto)
+      }
+      else{cargarProductos(bd.productos)
+      }
+  })
 })
 
 
-function actualizarBotonesAgregar(){
-    botonesAgregar = document.querySelectorAll(".producto-agregar"); 
-    
-    botonesAgregar.forEach(boton => {
-        boton.addEventListener("click", agregarAlCarrito);
+// funcion buscar
+const inputBuscar = document.querySelector("#inputBuscar");
+
+  inputBuscar.addEventListener("keyup",(event) => {
+    event.preventDefault();
+    const palabra = inputBuscar.value;
+    const productosEncontrados = bd.registrosPorNombre(palabra.toLowerCase());
+    cargarProductos(productosEncontrados);
+  });
+
+
+
+  //alerta de compra exitosa!
+  const btnComprar = document.querySelector("#btnComprar");
+
+  btnComprar.addEventListener("click", (event)=>{
+
+    Swal.fire({
+      position: 'top-center',
+      icon: 'success',
+      title: 'your purchase was successful! ',
+      showConfirmButton: false,
+      timer: 1800
     })
-    
-}
 
-//llevamos los productos con el local storage al carrito
+    carrito.vaciar();
+    seComp.classList.add("ocultar")
+    btnVacio.innerHTML="Tu carrito esta vacio";
 
-let productosEnCarrito;
-let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
+  })
 
-if(productosEnCarritoLS){
-    productosEnCarrito =  JSON.parse(productosEnCarritoLS);
-    actualizarNumerito();
-}else{
-    productosEnCarrito = [];
-}
+  modOscuro.addEventListener("click", (e)=>{
+    document.querySelector(".Maintodo").classList.toggle("oscuro");
+  })
 
-//Agregamos los productos al carrito
+  BotonCart.addEventListener("click", (e) => {
+    document.querySelector(".contenedor-carrito").classList.toggle("ocultar");
+  });
 
-        function agregarAlCarrito(e){
-
-            const idboton = e.currentTarget.id;
-            const productoAgregado = productos.find(producto => producto.id === idboton);
-
-                    if(productosEnCarrito.some(producto => producto.id===idboton)){
-                 const index = productosEnCarrito.findIndex(producto => producto.id === idboton);
-                 productosEnCarrito[index].cantidad++;
-
-             }else{
-                 productoAgregado.cantidad=1; 
-                 productosEnCarrito.push(productoAgregado)
-                 
-             }
-
-             actualizarNumerito()
-         
-          
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
-          
-            
-
- }
-
-  function actualizarNumerito() {
-     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
-     console.log(nuevoNumerito)
-     numerito.innerText = nuevoNumerito;
-
- } 
+  const carrito = new Carrito();
