@@ -228,9 +228,13 @@ text-align: center;
     object-fit: cover;
     width: 100%;
     object-position: top;
-    /* width: cover;
-    height: cover;
-    display: flex; */
+}
+
+
+.stadium{
+    object-fit: cover;
+    width: 100%;
+    object-position: bottom;
 }
 
 

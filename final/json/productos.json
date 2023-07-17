@@ -182,93 +182,93 @@
 
         {
             "id":"Camiseta-liga01",
-            "nombre": "Manchester Untd",
+            "nombre": "Barcelona Fc",
             "detalle":"Home Kit",
             "precio":90,
-            "imagen":"../img/united1.png",
+            "imagen":"../img/barcelona.png",
             "categoria":"Laliga",
             "clave":"la_liga españa spain BBVA"
             },
         {
             "id":"Camiseta-liga02",
-            "nombre":"Manchester city",
+            "nombre":"Real Madrid",
             "detalle":"Home Kit",
             "precio":90,
-            "imagen":"../img/city1.png",
+            "imagen":"../img/realm.png",
             "categoria":"Laliga",
-            "clave":"la_liga españa spain BBVA"
+            "clave":"la_liga españa merengue madrid spain BBVA"
         },
         {
             "id":"Camiseta-liga03",
-            "nombre":"Liverpool Fc",
+            "nombre":"Celta de Vigo",
             "detalle":"Home Kit",
             "precio":90,
-            "imagen":"../img/pool.jpg",
+            "imagen":"../img/vigo.png",
             "categoria":"Laliga",
-            "clave":"la_liga españa spain BBVA"
+            "clave":"la_liga vigo españa spain BBVA"
         },
         {
             "id":"Camiseta-liga04",
-            "nombre":"Totenham spurs",
+            "nombre":"Atletico Madrid",
             "detalle":"Home Kit",
             "precio":90,
-            "imagen":"../img/tot.jpg",
+            "imagen":"../img/colchonero.png",
             "categoria":"Laliga",
-            "clave":"la_liga españa spain BBVA"
+            "clave":"la_liga españa colchonero aleti atletico madrid spain BBVA"
             },
         {
             "id":"Camiseta-liga05",
-            "nombre":"Brigthon Fc",
+            "nombre":"Valladolid fc",
             "detalle":"Home Kit",
             "precio":90,
-            "imagen":"../img/brigthon.png",
+            "imagen":"../img/valla.png",
             "categoria":"Laliga",
-            "clave":"la_liga españa spain BBVA"
+            "clave":"la_liga españa valladolid spain BBVA"
             },
         {
             "id":"Camiseta-liga06",
-            "nombre":"Chelsea Fc",
+            "nombre":"Athletic Bilbao",
             "detalle":"Home Kit",
             "precio":90,
-            "imagen":"../img/chelsea.png",
+            "imagen":"../img/bilbao.png",
             "categoria":"Laliga",
-            "clave":"la_liga españa spain BBVA"
+            "clave":"la_liga españa bilbao athletic atletico  spain BBVA"
             },
         {
             "id":"Camiseta-liga07",
-            "nombre":"Arsenal Fc",
+            "nombre":"Valencia C.F.",
             "detalle":"Home Kit",
             "precio":90,
-            "imagen":"../img/arsenal1.png",
+            "imagen":"../img/valencia.png",
             "categoria":"Laliga",
-            "clave":"la_liga españa spain BBVA"
+            "clave":"la_liga españa spain valencia BBVA"
             },
         {
             "id":"Camiseta-liga08",
-            "nombre":"New Castle U.Fc",
+            "nombre":"Villareal",
             "detalle":"Home Kit",
             "precio":90,
-            "imagen":"../img/newcastel.png",
+            "imagen":"../img/submarino.png",
             "categoria":"Laliga",
-            "clave":"la_liga españa spain BBVA"
+            "clave":"la_liga españa sunmarino villareal spain BBVA"
             },
         {
                 "id":"Camiseta-liga09",
-                "nombre":"Fulham fc",
+                "nombre":"La Coruña",
                 "detalle":"Away Kit",
                 "precio":90,
-                "imagen":"../img/fulham.png",
+                "imagen":"../img/coruña.png",
                 "categoria":"Laliga",
-            "clave":"la_liga españa spain BBVA"
+            "clave":"la_liga depor lacoruña la_coruña españa spain BBVA"
                 },
             {
                 "id":"Camiseta-liga10",
-                "nombre":"Arsenal Fc",
+                "nombre":"Real Betis",
                 "detalle":"Away Kit",
                 "precio":90,
-                "imagen":"../img/arsenal.png",
+                "imagen":"../img/betis.png",
                 "categoria":"Laliga",
-            "clave":"la_liga españa spain BBVA"
+            "clave":"la_liga real betis españa spain BBVA"
                 }
     ]
     
