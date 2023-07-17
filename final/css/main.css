@@ -487,7 +487,6 @@ h5{
     display: grid;
     grid-auto-rows: 15rem;
     grid-template-columns:repeat(auto-fill,minmax(10rem,1fr));
-    /* grid-template-columns: repeat(4,1fr); */
     max-width:60%;
     padding-top: 3rem;
     padding-bottom: 5rem;
@@ -504,7 +503,6 @@ h5{
     width:172;
     height: 200px;
     object-fit: cover;
-    /* border-radius: 1rem; */
     cursor:zoom-in;
 }
 
@@ -512,7 +510,6 @@ h5{
     background-color: rgba(0, 0, 0, 0.712);
     color: rgb(255, 255, 255);
     padding: 0.7rem;
-    /* border-radius: 1rem; */
     margin-top: -2rem;
     position: relative;
     display: flex;
@@ -606,7 +603,6 @@ footer{
     left: 77rem;
     padding-right: 7rem;
     padding-left: 1rem;
-    /* display: flex; */
     overflow-y: scroll;
     overflow-x: hidden;
     justify-content: space-between;
@@ -679,12 +675,13 @@ section {
 
 .carrito-acciones{
     width: cover;
-    height: 100px;
+    height: 90px;
     background-color: #037bf2;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-left:2rem ;
+    margin-bottom:1rem 
 }
 
 div.productoCarrito{
